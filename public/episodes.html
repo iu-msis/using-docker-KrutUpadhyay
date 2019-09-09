@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Episodes</title>
+
+        <!--Compiled and minified CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!--jQuery CDN-->
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+        <!--Compiled and minified JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+     <body id="bodycolor" class="row">
+        <div class="container">
+        <header class="row">
+        <img src="images/office2.jpg" title="https://www.nbcstore.com/the-office-sign.html" width=100% >
+        <P class="kymid companyname"></P>
+        </header >
+
+
+<nav class="row navbar navbar-default top">
+
+    <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="menu">
+    <ul  class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="episodes.html">Episodes</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+            <main class="row whitecolor" >
+
+<h2>Favorite Episodes (Screenplays)</h2>
+    <table id="taskTable" class="table table-hover table-condensed table-bordered">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Screenwriter</th>
+                <th>Producer</th>
+                <th>Year</th>
+                <th>No. of Pages</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr >
+                <td >Money</td>
+                <td>Ricky Gervais</td>
+                <td>B.J Novac</td>
+                <td>2007</td>
+                <td>25</td>
+
+            </tr>
+
+                  <tr >
+                <td >Dinner Party</td>
+                <td>Greg Daniels</td>
+                <td>Steve Carell</td>
+                <td>2008</td>
+                <td>42</td>
+
+            </tr>
+
+                  <tr >
+                <td >Dwight Christmas</td>
+                <td>Michael Schur</td>
+                <td>John Krasinski</td>
+                <td>2009</td>
+                <td>22</td>
+
+            </tr>
+
+
+                  <tr >
+                <td >The Dundies</td>
+                <td>Mindy Kaling</td>
+                <td>Stephen Merchant</td>
+                <td>2011</td>
+                <td>23</td>
+
+            </tr>
+
+
+
+                  <tr >
+                <td >The Convict</td>
+                <td>Gene Stupnitsky</td>
+                <td>John Krasinski</td>
+                <td>2009</td>
+                <td>27</td>
+
+            </tr>
+
+
+        </tbody>
+
+<!--
+        <tfoot>
+            <tr>
+                <td colspan="5">
+                </td>
+            </tr>
+        </tfoot>
+-->
+    </table>
+    <div class="row">
+
+
+    <h2 class="whitecolor">Suggest New Episodes</h2>
+    <!--Step 1:Adding HTML-->
+    <form action="/action_page.php" >
+
+
+    <div class="whitecolor">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <label><b>Episode Name</b></label>
+        <input  type="text" placeholder="" name="company name" required> </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+            <label><b>Season Number</b></label>
+            <input type="text" placeholder="" name="phone number" required> </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+
+            <label><b>Episode Number</b></label>
+            <input type="text" placeholder="" name="street number" required></div>
+
+
+ <div class="col-lg-6 col-md-6 col-sm-12">
+            <label><b>Screenwriter</b></label>
+            <input type="text" placeholder="" name="city" required></div>
+ <div class="col-lg-6 col-md-6 col-sm-12">
+            <label><b>Producer</b></label>
+            <input type="text" placeholder="" name="state" required></div>
+
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+            <label><b>Year</b></label>
+            <input type="text" placeholder="" name="zip" required></div>
+
+   <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="clearfix">
+
+                <button type="submit" class="signupbtn">Submit</button>
+            </div> </div></div>
+
+    </form>
+        </div>
+                <footer>
+                    <img src="images/dunder.png" title="https://theoffice.fandom.com/wiki/Dunder_Mifflin_Paper_Company" width=20% height="10%">
+       <p> Dunder Mifflin | Phone:800-200-3030 | 1725 Slough Avenue Scranton, PA 15001 </p>
+    </footer>
+        </div>
+
+                <script src="js/tablesort.min.js"></script>
+                <script>
+      //Tablesort plugin from: http://tristen.ca/tablesort/demo/
+  new Tablesort(document.getElementById('taskTable'));
+</script>
+
+</body>
+
+</html>
