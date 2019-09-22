@@ -54,7 +54,7 @@
 
 
         &nbsp
-        
+
             <blockquote>
                 <strong>I want people to be afraid of how much they love me - </strong> <i>Michael Scott</i>
             </blockquote>
@@ -66,8 +66,8 @@
             &nbsp;
 
             <h2> Website Owned By:</h2>
-            
-        
+
+
             <div id="randomUsersApp">
         <div v-for="user in users">
             <img v-bind:src="user.picture.large" alt="https://randomuser.me/photos">
@@ -76,11 +76,16 @@
             Birthdate: {{user.dob.date}}<br>
             Age: {{user.dob.age}}
             </h2>
-            
+
 
 
              <h3><a href="mailto:krut96@gmail.com" target="_top" id="link">Reach us via E-Mail</h3>
          </div>
+
+          <form v-on:submit="fetchPeople">
+          <button type="submit" class="btn btn-primary">Refresh</button>
+          </form>
+          
             </div>
         </main>
 
@@ -90,9 +95,9 @@
         <p>Dunder Mifflin | Phone:800-200-3030 | 1725 Slough Avenue in Scranton, PA 15001</p>
         </footer>
         </div>
-            
+
             <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/app.js"></script>
-            
+
     </body>
 </html>
